@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="wineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#722F37"/>
+      <stop offset="100%" style="stop-color:#41121A"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C9A96E"/>
+      <stop offset="100%" style="stop-color:#e5bd2d"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="16" fill="url(#wineGrad)"/>
+  <text x="50" y="38" text-anchor="middle" font-family="Georgia,serif" font-size="28" font-weight="bold" fill="url(#goldGrad)">LM</text>
+  <text x="50" y="58" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#C9A96E">DORÉE</text>
+  <path d="M20 70 Q50 75 80 70" stroke="url(#goldGrad)" stroke-width="1.5" fill="none"/>
+  <path d="M25 74 Q50 79 75 74" stroke="url(#goldGrad)" stroke-width="1.5" fill="none"/>
+  <circle cx="22" cy="68" r="2.5" fill="url(#goldGrad)"/>
+  <circle cx="78" cy="68" r="2.5" fill="url(#goldGrad)"/>
+</svg>
