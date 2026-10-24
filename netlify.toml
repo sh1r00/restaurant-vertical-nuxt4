@@ -6,13 +6,8 @@
 [build.environment]
   NODE_VERSION = "24"
 
-# SPA fallback for client-side routing
-[[redirects]]
-  from = "/"
-  to = "/en/"
-  status = 302
-
+# SPA fallback for client-side routing (prefix_except_default — root serves the SPA)
 [[redirects]]
   from = "/*"
-  to = "/200.html"
+  to = "/index.html"
   status = 200
