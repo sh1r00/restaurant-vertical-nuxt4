@@ -8,10 +8,10 @@
       </div>
       <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
         <h1 id="contact-heading" class="text-4xl md:text-6xl font-serif font-bold text-white mb-6">
-          {{ $t('contact.title') }}
+          {{ 'Contact Us' }}
         </h1>
         <p class="text-wine-300 text-lg max-w-2xl mx-auto">
-          {{ $t('contact.subtitle') }}
+          {{ 'We look forward to welcoming you. For reservations, private events, or general inquiries, please reach out.' }}
         </p>
         <div class="w-24 h-0.5 bg-gold-500 mx-auto mt-8" aria-hidden="true" />
       </div>
@@ -27,19 +27,19 @@
             <div class="bg-wine-50 dark:bg-wine-900/20 rounded-2xl p-6 border border-wine-100 dark:border-wine-800">
               <h2 class="text-lg font-serif font-semibold text-wine-900 dark:text-wine-100 mb-4 flex items-center gap-2">
                 <AIcon name="clock" size="md" class="text-gold-500" />
-                {{ $t('contact.hoursTitle') }}
+                {{ 'Hours of Operation' }}
               </h2>
               <ul class="space-y-3 text-sm text-wine-700 dark:text-wine-300">
                 <li class="flex justify-between">
-                  <span class="font-medium">{{ $t('contact.hoursDinner') }}</span>
-                  <span class="text-wine-500 dark:text-wine-400">{{ $t('contact.hoursDinnerTime') }}</span>
+                  <span class="font-medium">{{ 'Dinner' }}</span>
+                  <span class="text-wine-500 dark:text-wine-400">{{ 'Tuesday - Saturday: 5:30 PM - 10:30 PM' }}</span>
                 </li>
                 <li class="flex justify-between">
-                  <span class="font-medium">{{ $t('contact.hoursBrunch') }}</span>
-                  <span class="text-wine-500 dark:text-wine-400">{{ $t('contact.hoursBrunchTime') }}</span>
+                  <span class="font-medium">{{ 'Brunch' }}</span>
+                  <span class="text-wine-500 dark:text-wine-400">{{ 'Sunday: 11:00 AM - 3:00 PM' }}</span>
                 </li>
                 <li class="flex justify-between border-t border-wine-200 dark:border-wine-700 pt-3">
-                  <span class="font-medium text-wine-500">{{ $t('contact.hoursClosed') }}</span>
+                  <span class="font-medium text-wine-500">{{ 'Monday: Closed' }}</span>
                 </li>
               </ul>
             </div>
@@ -48,10 +48,10 @@
             <div class="bg-wine-50 dark:bg-wine-900/20 rounded-2xl p-6 border border-wine-100 dark:border-wine-800">
               <h2 class="text-lg font-serif font-semibold text-wine-900 dark:text-wine-100 mb-4 flex items-center gap-2">
                 <AIcon name="map-pin" size="md" class="text-gold-500" />
-                {{ $t('contact.locationTitle') }}
+                {{ 'Location' }}
               </h2>
-              <p class="text-sm text-wine-700 dark:text-wine-300 mb-1">{{ $t('contact.locationAddress') }}</p>
-              <p class="text-xs text-wine-500 dark:text-wine-400">{{ $t('contact.locationCross') }}</p>
+              <p class="text-sm text-wine-700 dark:text-wine-300 mb-1">{{ '47 Rue de la Gastronomie, City Center' }}</p>
+              <p class="text-xs text-wine-500 dark:text-wine-400">{{ 'Between Avenue des Champs and Boulevard Saint-Germain' }}</p>
             </div>
 
             <!-- Phone & Email -->
@@ -59,20 +59,20 @@
               <div class="bg-wine-50 dark:bg-wine-900/20 rounded-2xl p-6 border border-wine-100 dark:border-wine-800">
                 <h2 class="text-lg font-serif font-semibold text-wine-900 dark:text-wine-100 mb-4 flex items-center gap-2">
                   <AIcon name="phone" size="md" class="text-gold-500" />
-                  {{ $t('contact.phoneTitle') }}
+                  {{ 'Phone' }}
                 </h2>
-                <a :href="'tel:' + $t('contact.phoneNumber')" class="text-sm text-wine-700 dark:text-wine-300 hover:text-gold-500 transition-colors">
-                  {{ $t('contact.phoneNumber') }}
+                <a :href="'tel:' + '+1 (212) 555-0189'" class="text-sm text-wine-700 dark:text-wine-300 hover:text-gold-500 transition-colors">
+                  {{ '+1 (212) 555-0189' }}
                 </a>
               </div>
 
               <div class="bg-wine-50 dark:bg-wine-900/20 rounded-2xl p-6 border border-wine-100 dark:border-wine-800">
                 <h2 class="text-lg font-serif font-semibold text-wine-900 dark:text-wine-100 mb-4 flex items-center gap-2">
                   <AIcon name="mail" size="md" class="text-gold-500" />
-                  {{ $formatEmail(t('contact.emailTitle')) }}
+                  {{ $formatEmail('Email') }}
                 </h2>
-                <a :href="'mailto:' + $formatEmail(t('contact.emailAddress'))" class="text-sm text-wine-700 dark:text-wine-300 hover:text-gold-500 transition-colors break-all">
-                  {{ $formatEmail(t('contact.emailAddress')) }}
+                <a :href="'mailto:' + $formatEmail('reservations[at]lamaisondoree.com')" class="text-sm text-wine-700 dark:text-wine-300 hover:text-gold-500 transition-colors break-all">
+                  {{ $formatEmail('reservations[at]lamaisondoree.com') }}
                 </a>
               </div>
             </div>
@@ -80,12 +80,12 @@
             <!-- Dress Code & Parking -->
             <div class="space-y-3 text-sm">
               <div class="bg-wine-50 dark:bg-wine-900/20 rounded-2xl p-6 border border-wine-100 dark:border-wine-800">
-                <h3 class="font-semibold text-wine-900 dark:text-wine-100 mb-1">{{ $t('contact.dressCode') }}</h3>
-                <p class="text-wine-600 dark:text-wine-400">{{ $t('contact.dressCodeDetail') }}</p>
+                <h3 class="font-semibold text-wine-900 dark:text-wine-100 mb-1">{{ 'Dress Code' }}</h3>
+                <p class="text-wine-600 dark:text-wine-400">{{ 'Smart elegant attire is appreciated. Jackets are recommended for gentlemen.' }}</p>
               </div>
               <div class="bg-wine-50 dark:bg-wine-900/20 rounded-2xl p-6 border border-wine-100 dark:border-wine-800">
-                <h3 class="font-semibold text-wine-900 dark:text-wine-100 mb-1">{{ $t('contact.parking') }}</h3>
-                <p class="text-wine-600 dark:text-wine-400">{{ $t('contact.parkingDetail') }}</p>
+                <h3 class="font-semibold text-wine-900 dark:text-wine-100 mb-1">{{ 'Parking' }}</h3>
+                <p class="text-wine-600 dark:text-wine-400">{{ 'Complimentary valet parking is available. Street parking is also available nearby.' }}</p>
               </div>
             </div>
           </aside>
@@ -94,10 +94,10 @@
           <div class="lg:col-span-2">
             <div class="bg-wine-50 dark:bg-wine-900/20 rounded-2xl p-8 border border-wine-100 dark:border-wine-800">
               <h2 class="text-2xl font-serif font-bold text-wine-900 dark:text-wine-100 mb-2">
-                {{ $t('contact.reservationTitle') }}
+                {{ 'Make a Reservation' }}
               </h2>
               <p class="text-wine-600 dark:text-wine-400 text-sm mb-8">
-                {{ $t('contact.reservationSubtitle') }}
+                {{ 'Please fill out the form below and our team will confirm your booking within 24 hours.' }}
               </p>
 
               <!-- Success State -->
@@ -106,10 +106,10 @@
                   <svg class="w-8 h-8 text-green-600 dark:text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                 </div>
                 <h3 class="text-xl font-serif font-semibold text-wine-900 dark:text-wine-100 mb-2">
-                  {{ $t('contact.successTitle') }}
+                  {{ 'Reservation Request Received!' }}
                 </h3>
                 <p class="text-wine-600 dark:text-wine-400 max-w-md mx-auto">
-                  {{ $t('contact.successMessage') }}
+                  {{ 'Thank you for your reservation request. Our team will contact you within 24 hours to confirm your booking.' }}
                 </p>
               </div>
 
@@ -123,13 +123,13 @@
                 <!-- Name -->
                 <div>
                   <label for="reservation-name" class="block text-sm font-medium text-wine-700 dark:text-wine-300 mb-2">
-                    {{ $t('contact.nameLabel') }} <span class="text-red-500">*</span>
+                    {{ 'Full Name' }} <span class="text-red-500">*</span>
                   </label>
                   <input
                     id="reservation-name"
                     v-model="form.name"
                     type="text"
-                    :placeholder="$t('contact.namePlaceholder')"
+                    :placeholder="'Your full name'"
                     required
                     :aria-invalid="errors.name ? 'true' : 'false'"
                     :aria-describedby="errors.name ? 'name-error' : undefined"
@@ -143,13 +143,13 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label for="reservation-email" class="block text-sm font-medium text-wine-700 dark:text-wine-300 mb-2">
-                      {{ $formatEmail(t('contact.emailLabel')) }} <span class="text-red-500">*</span>
+                      {{ $formatEmail('Email Address') }} <span class="text-red-500">*</span>
                     </label>
                     <input
                       id="reservation-email"
                       v-model="form.email"
                       type="email"
-                      :placeholder="$formatEmail(t('contact.emailPlaceholder'))"
+                      :placeholder="$formatEmail('your.email[at]example.com')"
                       required
                       :aria-invalid="errors.email ? 'true' : 'false'"
                       :aria-describedby="errors.email ? 'email-error' : undefined"
@@ -160,13 +160,13 @@
                   </div>
                   <div>
                     <label for="reservation-phone" class="block text-sm font-medium text-wine-700 dark:text-wine-300 mb-2">
-                      {{ $t('contact.phoneLabel') }}
+                      {{ 'Phone Number' }}
                     </label>
                     <input
                       id="reservation-phone"
                       v-model="form.phone"
                       type="tel"
-                      :placeholder="$t('contact.phonePlaceholder')"
+                      :placeholder="'Your phone number'"
                       :aria-invalid="errors.phone ? 'true' : 'false'"
                       :aria-describedby="errors.phone ? 'phone-error' : undefined"
                       class="w-full px-4 py-3 bg-white dark:bg-wine-900 border border-wine-200 dark:border-wine-700 rounded-lg text-wine-900 dark:text-wine-100 placeholder-wine-400 dark:placeholder-wine-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-colors"
@@ -179,7 +179,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
                   <div>
                     <label for="reservation-date" class="block text-sm font-medium text-wine-700 dark:text-wine-300 mb-2">
-                      {{ $t('contact.dateLabel') }} <span class="text-red-500">*</span>
+                      {{ 'Preferred Date' }} <span class="text-red-500">*</span>
                     </label>
                     <input
                       id="reservation-date"
@@ -195,7 +195,7 @@
                   </div>
                   <div>
                     <label for="reservation-time" class="block text-sm font-medium text-wine-700 dark:text-wine-300 mb-2">
-                      {{ $t('contact.timeLabel') }} <span class="text-red-500">*</span>
+                      {{ 'Preferred Time' }} <span class="text-red-500">*</span>
                     </label>
                     <select
                       id="reservation-time"
@@ -206,7 +206,7 @@
                       class="w-full px-4 py-3 bg-white dark:bg-wine-900 border rounded-lg text-wine-900 dark:text-wine-100 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-colors"
                       :class="errors.time ? 'border-red-500' : 'border-wine-200 dark:border-wine-700'"
                     >
-                      <option value="" disabled>{{ $t('contact.timeLabel') }}</option>
+                      <option value="" disabled>{{ 'Preferred Time' }}</option>
                       <option value="17:30">5:30 PM</option>
                       <option value="18:00">6:00 PM</option>
                       <option value="18:30">6:30 PM</option>
@@ -220,7 +220,7 @@
                   </div>
                   <div>
                     <label for="reservation-guests" class="block text-sm font-medium text-wine-700 dark:text-wine-300 mb-2">
-                      {{ $t('contact.guestsLabel') }} <span class="text-red-500">*</span>
+                      {{ 'Number of Guests' }} <span class="text-red-500">*</span>
                     </label>
                     <select
                       id="reservation-guests"
@@ -231,7 +231,7 @@
                       class="w-full px-4 py-3 bg-white dark:bg-wine-900 border rounded-lg text-wine-900 dark:text-wine-100 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-colors"
                       :class="errors.guests ? 'border-red-500' : 'border-wine-200 dark:border-wine-700'"
                     >
-                      <option value="" disabled>{{ $t('contact.guestsPlaceholder') }}</option>
+                      <option value="" disabled>{{ 'Select' }}</option>
                       <option v-for="n in 10" :key="n" :value="n">{{ n }} {{ n === 1 ? 'Guest' : 'Guests' }}</option>
                     </select>
                     <p v-if="errors.guests" id="guests-error" class="mt-1 text-sm text-red-500" role="alert">{{ errors.guests }}</p>
@@ -241,30 +241,30 @@
                 <!-- Occasion -->
                 <div>
                   <label for="reservation-occasion" class="block text-sm font-medium text-wine-700 dark:text-wine-300 mb-2">
-                    {{ $t('contact.occasionLabel') }}
+                    {{ 'Special Occasion' }}
                   </label>
                   <select
                     id="reservation-occasion"
                     v-model="form.occasion"
                     class="w-full px-4 py-3 bg-white dark:bg-wine-900 border border-wine-200 dark:border-wine-700 rounded-lg text-wine-900 dark:text-wine-100 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-colors"
                   >
-                    <option value="">{{ $t('contact.occasionNone') }}</option>
-                    <option value="birthday">{{ $t('contact.occasionBirthday') }}</option>
-                    <option value="anniversary">{{ $t('contact.occasionAnniversary') }}</option>
-                    <option value="business">{{ $t('contact.occasionBusiness') }}</option>
-                    <option value="other">{{ $t('contact.occasionOther') }}</option>
+                    <option value="">{{ 'None' }}</option>
+                    <option value="birthday">{{ 'Birthday' }}</option>
+                    <option value="anniversary">{{ 'Anniversary' }}</option>
+                    <option value="business">{{ 'Business Dinner' }}</option>
+                    <option value="other">{{ 'Other' }}</option>
                   </select>
                 </div>
 
                 <!-- Special Requests -->
                 <div>
                   <label for="reservation-requests" class="block text-sm font-medium text-wine-700 dark:text-wine-300 mb-2">
-                    {{ $t('contact.requestsLabel') }}
+                    {{ 'Special Requests' }}
                   </label>
                   <textarea
                     id="reservation-requests"
                     v-model="form.requests"
-                    :placeholder="$t('contact.requestsPlaceholder')"
+                    :placeholder="'Dietary restrictions, seating preferences, or any other requests...'"
                     rows="4"
                     class="w-full px-4 py-3 bg-white dark:bg-wine-900 border border-wine-200 dark:border-wine-700 rounded-lg text-wine-900 dark:text-wine-100 placeholder-wine-400 dark:placeholder-wine-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-colors resize-y"
                   />
@@ -280,7 +280,7 @@
                     :disabled="submitting"
                     class="w-full sm:w-auto"
                   >
-                    {{ submitting ? $t('contact.submitting') : $t('contact.submitButton') }}
+                    {{ submitting ? 'Submitting...' : 'Request Reservation' }}
                   </ABaseButton>
                 </div>
               </form>
@@ -294,11 +294,8 @@
 
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
-import { useI18n } from 'vue-i18n'
 import ABaseButton from '~/components/atoms/ABaseButton.vue'
 import AIcon from '~/components/atoms/AIcon.vue'
-
-const { t } = useI18n()
 
 const submitting = ref(false)
 const submitted = ref(false)
@@ -334,35 +331,35 @@ function validate(): boolean {
   errors.guests = ''
 
   if (!form.name.trim()) {
-    errors.name = t('errors.required')
+    errors.name = 'This field is required'
     valid = false
   }
 
   if (!form.email.trim()) {
-    errors.email = t('errors.required')
+    errors.email = 'This field is required'
     valid = false
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
-    errors.email = formatEmail(t('errors.email'))
+    errors.email = formatEmail('Please enter a valid email address')
     valid = false
   }
 
   if (form.phone && !/^[\d\s\+\-\(\)\.]{7,}$/.test(form.phone)) {
-    errors.phone = t('errors.phone')
+    errors.phone = 'Please enter a valid phone number'
     valid = false
   }
 
   if (!form.date) {
-    errors.date = t('errors.required')
+    errors.date = 'This field is required'
     valid = false
   }
 
   if (!form.time) {
-    errors.time = t('errors.required')
+    errors.time = 'This field is required'
     valid = false
   }
 
   if (!form.guests) {
-    errors.guests = t('errors.required')
+    errors.guests = 'This field is required'
     valid = false
   }
 

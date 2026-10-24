@@ -8,7 +8,7 @@
       </div>
       <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
         <h1 id="about-heading" class="text-4xl md:text-6xl font-serif font-bold text-white mb-6">
-          {{ $t('about.title') }}
+          {{ 'Our Story' }}
         </h1>
         <div class="w-24 h-0.5 bg-gold-500 mx-auto" aria-hidden="true" />
       </div>
@@ -34,15 +34,15 @@
           <!-- Chef Bio -->
           <div>
             <h2 id="chef-heading" class="text-3xl md:text-4xl font-serif font-bold text-wine-900 dark:text-wine-100 mb-2">
-              {{ $t('about.chefName') }}
+              {{ 'Chef Antoine Laurent' }}
             </h2>
             <p class="text-gold-600 dark:text-gold-400 font-medium mb-6 text-lg">
-              {{ $t('about.chefTitle') }}
+              {{ 'Executive Chef & Founder' }}
             </p>
             <div class="space-y-4 text-wine-600 dark:text-wine-300 leading-relaxed">
-              <p>{{ $t('about.chefBio1') }}</p>
-              <p>{{ $t('about.chefBio2') }}</p>
-              <p>{{ $t('about.chefBio3') }}</p>
+              <p>{{ `Chef Antoine Laurent discovered his passion for cooking in his grandmother's kitchen in Lyon, France. At just 16, he began his apprenticeship at a Michelin-starred restaurant, and by 24, he was named one of France's most promising young chefs.` }}</p>
+              <p>{{ 'After honing his craft in Paris, Tokyo, and New York, Chef Laurent opened La Maison Dorée in 2015 with a singular vision: to create a dining experience that honors classical French technique while embracing global influences and seasonal, locally-sourced ingredients.' }}</p>
+              <p>{{ 'Today, Chef Laurent leads a team of talented culinary professionals who share his commitment to excellence, creativity, and hospitality. Every plate that leaves the kitchen reflects his philosophy that food should nourish not just the body, but the soul.' }}</p>
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 id="philosophy-heading" class="section-heading mb-4">
-            {{ $t('about.philosophyTitle') }}
+            {{ 'Our Philosophy' }}
           </h2>
           <div class="w-24 h-0.5 bg-gold-500 mx-auto" aria-hidden="true" />
         </div>
@@ -66,10 +66,10 @@
               <AIcon name="leaf" size="lg" class="text-gold-600 dark:text-gold-400" />
             </div>
             <h3 class="text-xl font-serif font-semibold text-wine-900 dark:text-wine-100 mb-3">
-              {{ $t('about.philosophy1Title') }}
+              {{ 'Seasonal & Local' }}
             </h3>
             <p class="text-wine-600 dark:text-wine-400 text-sm leading-relaxed">
-              {{ $t('about.philosophy1Desc') }}
+              {{ `We partner with regional farmers, foragers, and artisans to bring the freshest seasonal ingredients to your table. Our menu evolves with the seasons, celebrating nature's bounty at its peak.` }}
             </p>
           </div>
 
@@ -79,10 +79,10 @@
               <AIcon name="star" size="lg" class="text-gold-600 dark:text-gold-400" />
             </div>
             <h3 class="text-xl font-serif font-semibold text-wine-900 dark:text-wine-100 mb-3">
-              {{ $t('about.philosophy2Title') }}
+              {{ 'Artisanal Craft' }}
             </h3>
             <p class="text-wine-600 dark:text-wine-400 text-sm leading-relaxed">
-              {{ $t('about.philosophy2Desc') }}
+              {{ 'From house-made bread and hand-rolled pasta to in-house charcuterie, we honor time-honored techniques that elevate simple ingredients into extraordinary dishes.' }}
             </p>
           </div>
 
@@ -92,10 +92,10 @@
               <AIcon name="wine" size="lg" class="text-gold-600 dark:text-gold-400" />
             </div>
             <h3 class="text-xl font-serif font-semibold text-wine-900 dark:text-wine-100 mb-3">
-              {{ $t('about.philosophy3Title') }}
+              {{ 'Impeccable Service' }}
             </h3>
             <p class="text-wine-600 dark:text-wine-400 text-sm leading-relaxed">
-              {{ $t('about.philosophy3Desc') }}
+              {{ 'Our front-of-house team delivers warm, attentive service with meticulous attention to detail. We believe hospitality is an art form, and every guest deserves a memorable experience.' }}
             </p>
           </div>
         </div>
@@ -107,7 +107,7 @@
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 id="awards-heading" class="section-heading mb-4">
-            {{ $t('about.awardsTitle') }}
+            {{ 'Awards & Recognition' }}
           </h2>
           <div class="w-24 h-0.5 bg-gold-500 mx-auto" aria-hidden="true" />
         </div>
@@ -117,40 +117,40 @@
           <div class="text-center p-6 rounded-xl bg-wine-50 dark:bg-wine-900/20 border border-wine-100 dark:border-wine-800">
             <AIcon name="award" size="xl" class="text-gold-500 mx-auto mb-4" />
             <h3 class="text-lg font-serif font-semibold text-wine-900 dark:text-wine-100 mb-1">
-              {{ $t('about.award1Name') }}
+              {{ 'Two Michelin Stars' }}
             </h3>
-            <p class="text-xs text-gold-600 dark:text-gold-400 font-medium mb-2">{{ $t('about.award1Year') }}</p>
-            <p class="text-sm text-wine-600 dark:text-wine-400">{{ $t('about.award1Desc') }}</p>
+            <p class="text-xs text-gold-600 dark:text-gold-400 font-medium mb-2">{{ '2019-2025' }}</p>
+            <p class="text-sm text-wine-600 dark:text-wine-400">{{ 'Recognized for exceptional cuisine, worth a detour' }}</p>
           </div>
 
           <!-- Award 2 -->
           <div class="text-center p-6 rounded-xl bg-wine-50 dark:bg-wine-900/20 border border-wine-100 dark:border-wine-800">
             <AIcon name="award" size="xl" class="text-gold-500 mx-auto mb-4" />
             <h3 class="text-lg font-serif font-semibold text-wine-900 dark:text-wine-100 mb-1">
-              {{ $t('about.award2Name') }}
+              {{ 'James Beard Award' }}
             </h3>
-            <p class="text-xs text-gold-600 dark:text-gold-400 font-medium mb-2">{{ $t('about.award2Year') }}</p>
-            <p class="text-sm text-wine-600 dark:text-wine-400">{{ $t('about.award2Desc') }}</p>
+            <p class="text-xs text-gold-600 dark:text-gold-400 font-medium mb-2">{{ '2022' }}</p>
+            <p class="text-sm text-wine-600 dark:text-wine-400">{{ 'Outstanding Restaurant, National Category' }}</p>
           </div>
 
           <!-- Award 3 -->
           <div class="text-center p-6 rounded-xl bg-wine-50 dark:bg-wine-900/20 border border-wine-100 dark:border-wine-800">
             <AIcon name="award" size="xl" class="text-gold-500 mx-auto mb-4" />
             <h3 class="text-lg font-serif font-semibold text-wine-900 dark:text-wine-100 mb-1">
-              {{ $t('about.award3Name') }}
+              {{ 'Wine Spectator Grand Award' }}
             </h3>
-            <p class="text-xs text-gold-600 dark:text-gold-400 font-medium mb-2">{{ $t('about.award3Year') }}</p>
-            <p class="text-sm text-wine-600 dark:text-wine-400">{{ $t('about.award3Desc') }}</p>
+            <p class="text-xs text-gold-600 dark:text-gold-400 font-medium mb-2">{{ '2020-2025' }}</p>
+            <p class="text-sm text-wine-600 dark:text-wine-400">{{ `One of the world's finest wine programs` }}</p>
           </div>
 
           <!-- Award 4 -->
           <div class="text-center p-6 rounded-xl bg-wine-50 dark:bg-wine-900/20 border border-wine-100 dark:border-wine-800">
             <AIcon name="award" size="xl" class="text-gold-500 mx-auto mb-4" />
             <h3 class="text-lg font-serif font-semibold text-wine-900 dark:text-wine-100 mb-1">
-              {{ $t('about.award4Name') }}
+              {{ 'Forbes Travel Guide Five-Star' }}
             </h3>
-            <p class="text-xs text-gold-600 dark:text-gold-400 font-medium mb-2">{{ $t('about.award4Year') }}</p>
-            <p class="text-sm text-wine-600 dark:text-wine-400">{{ $t('about.award4Desc') }}</p>
+            <p class="text-xs text-gold-600 dark:text-gold-400 font-medium mb-2">{{ '2023-2025' }}</p>
+            <p class="text-sm text-wine-600 dark:text-wine-400">{{ 'The pinnacle of luxury dining' }}</p>
           </div>
         </div>
       </div>
@@ -159,6 +159,7 @@
 </template>
 
 <script setup lang="ts">
+
 import AIcon from '~/components/atoms/AIcon.vue'
 
 useHead({

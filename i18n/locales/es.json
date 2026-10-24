@@ -205,5 +205,11 @@
     "email": "Por favor ingrese un correo electrónico válido",
     "phone": "Por favor ingrese un número de teléfono válido",
     "generic": "Algo salió mal. Por favor intente de nuevo."
+  },
+  "pwa": {
+    "heading": "Instalar esta aplicación",
+    "description": "Instala esta aplicación para acceder sin conexión y disfrutar de una experiencia más rápida.",
+    "install": "Instalar",
+    "dismiss": "Descartar"
   }
 }

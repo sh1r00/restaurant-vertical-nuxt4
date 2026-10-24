@@ -6,7 +6,7 @@
       class="skip-to-content"
       aria-label="Skip to main content"
     >
-      {{ $t('skipToContent') }}
+      {{ 'Skip to main content' }}
     </a>
 
     <OHeader />
@@ -20,6 +20,7 @@
 </template>
 
 <script setup lang="ts">
+
 import OHeader from '~/components/organisms/OHeader.vue'
 import OFooter from '~/components/organisms/OFooter.vue'
 </script>

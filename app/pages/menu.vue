@@ -8,10 +8,10 @@
       </div>
       <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
         <h1 id="menu-heading" class="text-4xl md:text-6xl font-serif font-bold text-white mb-6">
-          {{ $t('menu.title') }}
+          {{ 'Our Menu' }}
         </h1>
         <p class="text-wine-300 text-lg md:text-xl max-w-2xl mx-auto">
-          {{ $t('menu.subtitle') }}
+          {{ 'A carefully curated selection of dishes that celebrate the finest seasonal ingredients and culinary craftsmanship' }}
         </p>
         <div class="w-24 h-0.5 bg-gold-500 mx-auto mt-8" aria-hidden="true" />
       </div>
@@ -24,35 +24,35 @@
         <!-- Appetizers -->
         <div class="mb-20" aria-labelledby="appetizers-heading">
           <h2 id="appetizers-heading" class="text-3xl font-serif font-bold text-wine-900 dark:text-wine-100 mb-2">
-            {{ $t('menu.appetizers') }}
+            {{ 'Appetizers' }}
           </h2>
           <div class="w-16 h-0.5 bg-gold-500 mb-8" aria-hidden="true" />
 
           <div class="space-y-6">
             <MenuItem
-              :name="$t('menu.appetizer1Name')"
-              :description="$t('menu.appetizer1Desc')"
-              :price="$t('menu.appetizer1Price')"
+              :name="'Tuna Tartare'"
+              :description="'Fresh yellowfin tuna with avocado mousse, sesame tuile, and yuzu dressing'"
+              :price="'$28'"
               :dietary="['glutenFree']"
               :delay="0"
             />
             <MenuItem
-              :name="$t('menu.appetizer2Name')"
-              :description="$t('menu.appetizer2Desc')"
-              :price="$t('menu.appetizer2Price')"
+              :name="'Burrata & Heirloom Tomatoes'"
+              :description="'Creamy burrata with vine-ripened heirloom tomatoes, basil oil, aged balsamic'"
+              :price="'$24'"
               :dietary="['vegetarian', 'glutenFree']"
               :delay="100"
             />
             <MenuItem
-              :name="$t('menu.appetizer3Name')"
-              :description="$t('menu.appetizer3Desc')"
-              :price="$t('menu.appetizer3Price')"
+              :name="'Foie Gras Torchon'"
+              :description="'House-made foie gras with brioche toast, fig compote, and Sauternes gelée'"
+              :price="'$36'"
               :delay="200"
             />
             <MenuItem
-              :name="$t('menu.appetizer4Name')"
-              :description="$t('menu.appetizer4Desc')"
-              :price="$t('menu.appetizer4Price')"
+              :name="'Wild Mushroom Velouté'"
+              :description="'Silky mushroom soup with truffle foam and toasted hazelnuts'"
+              :price="'$22'"
               :dietary="['vegetarian', 'glutenFree']"
               :delay="300"
             />
@@ -62,36 +62,36 @@
         <!-- Main Courses -->
         <div class="mb-20" aria-labelledby="mains-heading">
           <h2 id="mains-heading" class="text-3xl font-serif font-bold text-wine-900 dark:text-wine-100 mb-2">
-            {{ $t('menu.mains') }}
+            {{ 'Main Courses' }}
           </h2>
           <div class="w-16 h-0.5 bg-gold-500 mb-8" aria-hidden="true" />
 
           <div class="space-y-6">
             <MenuItem
-              :name="$t('menu.main1Name')"
-              :description="$t('menu.main1Desc')"
-              :price="$t('menu.main1Price')"
+              :name="'Herb-Crusted Rack of Lamb'"
+              :description="'New Zealand lamb with rosemary jus, ratatouille, and potato gratin'"
+              :price="'$68'"
               :dietary="['glutenFree']"
               :delay="0"
             />
             <MenuItem
-              :name="$t('menu.main2Name')"
-              :description="$t('menu.main2Desc')"
-              :price="$t('menu.main2Price')"
+              :name="'Pan-Roasted Halibut'"
+              :description="'Atlantic halibut with pea purée, morel mushrooms, and Champagne sauce'"
+              :price="'$56'"
               :dietary="['glutenFree']"
               :delay="100"
             />
             <MenuItem
-              :name="$t('menu.main3Name')"
-              :description="$t('menu.main3Desc')"
-              :price="$t('menu.main3Price')"
+              :name="'Filet Mignon'"
+              :description="'Prime beef tenderloin with green peppercorn sauce, asparagus, and pommes dauphine'"
+              :price="'$78'"
               :dietary="['glutenFree']"
               :delay="200"
             />
             <MenuItem
-              :name="$t('menu.main4Name')"
-              :description="$t('menu.main4Desc')"
-              :price="$t('menu.main4Price')"
+              :name="'Wild Mushroom Risotto'"
+              :description="'Creamy carnaroli rice with mixed wild mushrooms, truffle oil, and parmesan crisp'"
+              :price="'$44'"
               :dietary="['vegetarian', 'glutenFree']"
               :delay="300"
             />
@@ -101,36 +101,36 @@
         <!-- Desserts -->
         <div class="mb-20" aria-labelledby="desserts-heading">
           <h2 id="desserts-heading" class="text-3xl font-serif font-bold text-wine-900 dark:text-wine-100 mb-2">
-            {{ $t('menu.desserts') }}
+            {{ 'Desserts' }}
           </h2>
           <div class="w-16 h-0.5 bg-gold-500 mb-8" aria-hidden="true" />
 
           <div class="space-y-6">
             <MenuItem
-              :name="$t('menu.dessert1Name')"
-              :description="$t('menu.dessert1Desc')"
-              :price="$t('menu.dessert1Price')"
+              :name="'Crème Brûlée'"
+              :description="'Classic Tahitian vanilla bean crème brûlée with caramelized sugar crust'"
+              :price="'$18'"
               :dietary="['vegetarian', 'glutenFree']"
               :delay="0"
             />
             <MenuItem
-              :name="$t('menu.dessert2Name')"
-              :description="$t('menu.dessert2Desc')"
-              :price="$t('menu.dessert2Price')"
+              :name="'Tarte Tatin'"
+              :description="'Upside-down caramelized apple tart with Calvados crème fraîche'"
+              :price="'$22'"
               :dietary="['vegetarian']"
               :delay="100"
             />
             <MenuItem
-              :name="$t('menu.dessert3Name')"
-              :description="$t('menu.dessert3Desc')"
-              :price="$t('menu.dessert3Price')"
+              :name="'Chocolate Fondant'"
+              :description="'Warm molten chocolate cake with raspberry coulis and vanilla ice cream'"
+              :price="'$20'"
               :dietary="['vegetarian']"
               :delay="200"
             />
             <MenuItem
-              :name="$t('menu.dessert4Name')"
-              :description="$t('menu.dessert4Desc')"
-              :price="$t('menu.dessert4Price')"
+              :name="'Cheese Selection'"
+              :description="'Artisanal cheese board with honeycomb, quince paste, and walnut bread'"
+              :price="'$32'"
               :dietary="['vegetarian']"
               :delay="300"
             />
@@ -140,50 +140,50 @@
         <!-- Wine List -->
         <div aria-labelledby="wine-heading">
           <h2 id="wine-heading" class="text-3xl font-serif font-bold text-wine-900 dark:text-wine-100 mb-2">
-            {{ $t('menu.wineList') }}
+            {{ 'Wine List' }}
           </h2>
           <div class="w-16 h-0.5 bg-gold-500 mb-8" aria-hidden="true" />
 
           <div class="space-y-6">
             <MenuItem
-              :name="$t('menu.wine1Name')"
-              :description="$t('menu.wine1Desc')"
-              :price="$t('menu.wine1Price')"
+              :name="'Château Margaux 2018'"
+              :description="'Bordeaux, France — Full-bodied with notes of blackcurrant, cedar, and truffle'"
+              :price="'$580'"
               :is-wine="true"
               :delay="0"
             />
             <MenuItem
-              :name="$t('menu.wine2Name')"
-              :description="$t('menu.wine2Desc')"
-              :price="$t('menu.wine2Price')"
+              :name="'Domaine de la Romanée-Conti 2019'"
+              :description="'Burgundy, France — Elegant and complex with silky tannins and dark fruit'"
+              :price="'$2,200'"
               :is-wine="true"
               :delay="100"
             />
             <MenuItem
-              :name="$t('menu.wine3Name')"
-              :description="$t('menu.wine3Desc')"
-              :price="$t('menu.wine3Price')"
+              :name="'Sassicaia 2020'"
+              :description="'Tuscany, Italy — Super Tuscan with rich blackberry, spice, and tobacco'"
+              :price="'$320'"
               :is-wine="true"
               :delay="200"
             />
             <MenuItem
-              :name="$t('menu.wine4Name')"
-              :description="$t('menu.wine4Desc')"
-              :price="$t('menu.wine4Price')"
+              :name="'Veuve Clicquot La Grande Dame 2015'"
+              :description="'Champagne, France — Refined bubbles with brioche, pear, and citrus zest'"
+              :price="'$240'"
               :is-wine="true"
               :delay="300"
             />
             <MenuItem
-              :name="$t('menu.wine5Name')"
-              :description="$t('menu.wine5Desc')"
-              :price="$t('menu.wine5Price')"
+              :name="'Cloudy Bay Sauvignon Blanc 2023'"
+              :description="'Marlborough, New Zealand — Crisp and vibrant with passionfruit and gooseberry'"
+              :price="'$85'"
               :is-wine="true"
               :delay="400"
             />
             <MenuItem
-              :name="$t('menu.wine6Name')"
-              :description="$t('menu.wine6Desc')"
-              :price="$t('menu.wine6Price')"
+              :name="'Marqués de Riscal Reserva 2019'"
+              :description="'Rioja, Spain — Tempranillo with vanilla, leather, and dark cherry'"
+              :price="'$110'"
               :is-wine="true"
               :delay="500"
             />
@@ -201,11 +201,11 @@
       </div>
       <div class="relative z-10 max-w-2xl mx-auto px-4 text-center">
         <p class="text-wine-300 text-lg mb-8">
-          {{ $t('home.ctaSubtitle') }}
+          {{ 'Reserve your table and let us create an unforgettable dining experience tailored just for you.' }}
         </p>
         <NuxtLink :to="localePath('/contact')">
           <ABaseButton variant="primary" size="lg" icon-right="arrow-right">
-            {{ $t('home.ctaButton') }}
+            {{ 'Make a Reservation' }}
           </ABaseButton>
         </NuxtLink>
       </div>
@@ -214,6 +214,7 @@
 </template>
 
 <script setup lang="ts">
+
 import ABaseButton from '~/components/atoms/ABaseButton.vue'
 import MenuItem from '~/components/MenuItem.vue'
 

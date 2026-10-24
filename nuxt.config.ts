@@ -6,10 +6,24 @@ export default defineNuxtConfig({
 
   modules: [
     '@vite-pwa/nuxt',
-    '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/i18n',
     'nuxt-security',
   ],
+
+  i18n: {
+    strategy: 'prefix_except_default',
+    defaultLocale: 'en',
+    lazy: true,
+    detectBrowserLanguage: false,
+    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
+    langDir: 'locales',
+    locales: [
+      { code: 'en', language: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
+      { code: 'es', language: 'es', iso: 'es-ES', file: 'es.json', name: 'Español' },
+      { code: 'am', language: 'am', iso: 'am-ET', file: 'am.json', name: 'አማርኛ' },
+    ],
+  },
 
   components: {
     dirs: [
@@ -19,46 +33,34 @@ export default defineNuxtConfig({
     ],
   },
 
-  i18n: {
-    strategy: 'prefix',
-    defaultLocale: 'en',
-    locales: [
-      { code: 'en', iso: 'en-US', name: 'English', file: 'en.json' },
-      { code: 'es', iso: 'es-ES', name: 'Español', file: 'es.json' },
-      { code: 'am', iso: 'am-ET', name: 'አማርኛ', file: 'am.json' },
-    ],
-    detection: { browserLanguage: false },
-  },
-
   pwa: {
     registerType: 'autoUpdate',
     devOptions: { enabled: false },
-    manifest: { name: 'App', short_name: 'App', theme_color: '#000000', background_color: '#ffffff', display: 'standalone' },
-    workbox: { globPatterns: ['**/*.{js,css,html,png,svg,ico,woff2,json}'], navigateFallback: '/', cleanupOutdatedCaches: true, skipWaiting: true, clientsClaim: true },
+    manifest: { name: 'La Maison Dorée', short_name: 'Maison Dorée', theme_color: '#1a1a2e', display: 'standalone' },
+    workbox: { globPatterns: ['**/*.{js,css,html,png,svg,ico,woff2}'], navigateFallback: '/', cleanupOutdatedCaches: true, skipWaiting: true, clientsClaim: true },
   },
 
   security: {
     headers: process.env.NODE_ENV === 'development' ? false : {
       contentSecurityPolicy: {
         'default-src': ["'self'"],
-        'script-src': ["'self'", "'unsafe-inline'"],
+        'script-src': ["'self'", "'strict-dynamic'", "'nonce-{{nonce}}'"],
         'style-src': ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
         'font-src': ["'self'", 'https://fonts.gstatic.com', 'https://fonts.googleapis.com'],
         'img-src': ["'self'", 'data:', 'https:'],
         'connect-src': ["'self'"],
         'frame-src': ["'self'"],
-        'frame-ancestors': ["'self'"],
         'base-uri': ["'self'"],
         'form-action': ["'self'"],
       },
     },
-    rateLimiter: false,
+    rateLimiter: { tokensPerInterval: 30, interval: 60000 },
     xssValidator: process.env.NODE_ENV !== 'development',
   },
 
   app: {
     head: {
-      htmlAttrs: { lang: 'en' },
+      title: 'La Maison Dorée — Fine Dining',
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
@@ -71,10 +73,6 @@ export default defineNuxtConfig({
     css: { configPath: 'tailwind.config.ts', cssPath: 'app/assets/css/main.css' },
   },
 
-  vite: {
-    optimizeDeps: {
-      include: ['@vue/devtools-core', '@vue/devtools-kit', 'pinia'],
-    },
-  },
+  vite: { optimizeDeps: { include: ['@vue/devtools-core', '@vue/devtools-kit', 'pinia'] } },
   nitro: { prerender: { failOnError: false } },
 })

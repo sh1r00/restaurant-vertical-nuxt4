@@ -14,17 +14,17 @@
 
       <div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
         <p class="text-gold-500 text-lg md:text-xl font-serif italic mb-4 tracking-wide">
-          {{ $t('site.tagline') }}
+          {{ 'Where Culinary Art Meets Tradition' }}
         </p>
         <h1 id="hero-heading" class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 leading-tight">
-          {{ $t('home.heroTitle') }}
+          {{ 'An Unforgettable Culinary Journey' }}
         </h1>
         <p class="text-wine-200 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-          {{ $t('home.heroSubtitle') }}
+          {{ 'Experience the artistry of fine dining at La Maison Dorée, where every dish tells a story of passion, tradition, and innovation.' }}
         </p>
         <NuxtLink :to="localePath('/contact')">
           <ABaseButton variant="primary" size="lg" icon-right="arrow-right">
-            {{ $t('home.heroCTA') }}
+            {{ 'Reserve a Table' }}
           </ABaseButton>
         </NuxtLink>
       </div>
@@ -40,10 +40,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 id="featured-heading" class="section-heading mb-4">
-            {{ $t('home.featuredTitle') }}
+            {{ 'Featured Dishes' }}
           </h2>
           <p class="text-wine-600 dark:text-wine-300 text-lg max-w-2xl mx-auto">
-            {{ $t('home.featuredSubtitle') }}
+            {{ `A selection of our chef's most celebrated creations` }}
           </p>
           <div class="w-24 h-0.5 bg-gold-500 mx-auto mt-6" aria-hidden="true" />
         </div>
@@ -57,12 +57,12 @@
             <div class="p-6">
               <div class="flex items-start justify-between mb-2">
                 <h3 class="text-xl font-serif font-semibold text-wine-900 dark:text-wine-100">
-                  {{ $t('home.dish1Name') }}
+                  {{ 'Pan-Seared Sea Bass' }}
                 </h3>
-                <span class="text-gold-600 dark:text-gold-400 font-medium ml-2 flex-shrink-0">{{ $t('home.dish1Price') }}</span>
+                <span class="text-gold-600 dark:text-gold-400 font-medium ml-2 flex-shrink-0">{{ '$48' }}</span>
               </div>
               <p class="text-wine-600 dark:text-wine-400 text-sm leading-relaxed">
-                {{ $t('home.dish1Desc') }}
+                {{ 'With saffron beurre blanc, fennel confit, and crispy capers' }}
               </p>
             </div>
           </article>
@@ -75,12 +75,12 @@
             <div class="p-6">
               <div class="flex items-start justify-between mb-2">
                 <h3 class="text-xl font-serif font-semibold text-wine-900 dark:text-wine-100">
-                  {{ $t('home.dish2Name') }}
+                  {{ 'Wagyu Beef Tenderloin' }}
                 </h3>
-                <span class="text-gold-600 dark:text-gold-400 font-medium ml-2 flex-shrink-0">{{ $t('home.dish2Price') }}</span>
+                <span class="text-gold-600 dark:text-gold-400 font-medium ml-2 flex-shrink-0">{{ '$72' }}</span>
               </div>
               <p class="text-wine-600 dark:text-wine-400 text-sm leading-relaxed">
-                {{ $t('home.dish2Desc') }}
+                {{ 'Truffle mashed potatoes, roasted bone marrow, red wine jus' }}
               </p>
             </div>
           </article>
@@ -93,12 +93,12 @@
             <div class="p-6">
               <div class="flex items-start justify-between mb-2">
                 <h3 class="text-xl font-serif font-semibold text-wine-900 dark:text-wine-100">
-                  {{ $t('home.dish3Name') }}
+                  {{ 'Lobster Ravioli' }}
                 </h3>
-                <span class="text-gold-600 dark:text-gold-400 font-medium ml-2 flex-shrink-0">{{ $t('home.dish3Price') }}</span>
+                <span class="text-gold-600 dark:text-gold-400 font-medium ml-2 flex-shrink-0">{{ '$54' }}</span>
               </div>
               <p class="text-wine-600 dark:text-wine-400 text-sm leading-relaxed">
-                {{ $t('home.dish3Desc') }}
+                {{ 'Handmade pasta filled with Maine lobster in a bisque reduction' }}
               </p>
             </div>
           </article>
@@ -111,10 +111,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 id="specials-heading" class="section-heading mb-4">
-            {{ $t('home.specialsTitle') }}
+            {{ `Chef's Specials` }}
           </h2>
           <p class="text-wine-600 dark:text-wine-300 text-lg max-w-2xl mx-auto">
-            {{ $t('home.specialsSubtitle') }}
+            {{ 'Seasonal creations crafted with the finest ingredients' }}
           </p>
           <div class="w-24 h-0.5 bg-gold-500 mx-auto mt-6" aria-hidden="true" />
         </div>
@@ -126,10 +126,10 @@
               <AIcon name="star" size="2xl" class="text-gold-500 opacity-60" />
             </div>
             <h3 class="text-xl font-serif font-semibold text-wine-900 dark:text-wine-100 mb-2">
-              {{ $t('home.special1Name') }}
+              {{ 'Summer Truffle Risotto' }}
             </h3>
             <p class="text-wine-600 dark:text-wine-400 text-sm leading-relaxed">
-              {{ $t('home.special1Desc') }}
+              {{ 'Arborio rice with black summer truffles, aged parmesan, and wild mushrooms' }}
             </p>
           </div>
 
@@ -139,10 +139,10 @@
               <AIcon name="star" size="2xl" class="text-gold-500 opacity-60" />
             </div>
             <h3 class="text-xl font-serif font-semibold text-wine-900 dark:text-wine-100 mb-2">
-              {{ $t('home.special2Name') }}
+              {{ `Duck à l'Orange` }}
             </h3>
             <p class="text-wine-600 dark:text-wine-400 text-sm leading-relaxed">
-              {{ $t('home.special2Desc') }}
+              {{ 'Slow-roasted duck breast with caramelized orange glaze and braised endive' }}
             </p>
           </div>
 
@@ -152,10 +152,10 @@
               <AIcon name="star" size="2xl" class="text-gold-500 opacity-60" />
             </div>
             <h3 class="text-xl font-serif font-semibold text-wine-900 dark:text-wine-100 mb-2">
-              {{ $t('home.special3Name') }}
+              {{ 'Chocolate Soufflé' }}
             </h3>
             <p class="text-wine-600 dark:text-wine-400 text-sm leading-relaxed">
-              {{ $t('home.special3Desc') }}
+              {{ 'Valrhona dark chocolate soufflé with vanilla bean crème anglaise' }}
             </p>
           </div>
         </div>
@@ -163,7 +163,7 @@
         <div class="text-center mt-12">
           <NuxtLink :to="localePath('/menu')">
             <ABaseButton variant="outline" size="md" icon-right="arrow-right">
-              {{ $t('home.viewAllMenu') }}
+              {{ 'View Full Menu' }}
             </ABaseButton>
           </NuxtLink>
         </div>
@@ -178,14 +178,14 @@
       </div>
       <div class="relative z-10 max-w-3xl mx-auto px-4 text-center">
         <h2 id="cta-heading" class="text-3xl md:text-5xl font-serif font-bold text-white mb-6">
-          {{ $t('home.ctaTitle') }}
+          {{ 'Ready for an Exceptional Evening?' }}
         </h2>
         <p class="text-wine-300 text-lg mb-10 leading-relaxed">
-          {{ $t('home.ctaSubtitle') }}
+          {{ 'Reserve your table and let us create an unforgettable dining experience tailored just for you.' }}
         </p>
         <NuxtLink :to="localePath('/contact')">
           <ABaseButton variant="primary" size="lg" icon-right="arrow-right">
-            {{ $t('home.ctaButton') }}
+            {{ 'Make a Reservation' }}
           </ABaseButton>
         </NuxtLink>
       </div>
@@ -194,6 +194,7 @@
 </template>
 
 <script setup lang="ts">
+
 import ABaseButton from '~/components/atoms/ABaseButton.vue'
 import AIcon from '~/components/atoms/AIcon.vue'
 

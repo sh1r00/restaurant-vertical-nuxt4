@@ -205,5 +205,11 @@
     "email": "Please enter a valid email address",
     "phone": "Please enter a valid phone number",
     "generic": "Something went wrong. Please try again."
+  },
+  "pwa": {
+    "heading": "Install this app",
+    "description": "Install this app for offline access and a faster, app-like experience.",
+    "install": "Install",
+    "dismiss": "Dismiss"
   }
 }

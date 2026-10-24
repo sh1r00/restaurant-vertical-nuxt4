@@ -47,9 +47,9 @@ const props = defineProps({
 
 function dietLabel(diet: string): string {
   const labels: Record<string, string> = {
-    vegetarian: t('menu.vegetarian'),
-    glutenFree: t('menu.glutenFree'),
-    vegan: t('menu.vegan'),
+    vegetarian: 'Vegetarian',
+    glutenFree: 'Gluten Free',
+    vegan: 'Vegan',
   }
   return labels[diet] || diet
 }
