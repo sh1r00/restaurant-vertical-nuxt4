@@ -27,9 +27,9 @@ export default defineNuxtConfig({
 
   components: {
     dirs: [
-      { path: '~/app/components/atoms', pathPrefix: false },
-      { path: '~/app/components/molecules', pathPrefix: false },
-      { path: '~/app/components/organisms', pathPrefix: false },
+      { path: '~/components/atoms', pathPrefix: false },
+      { path: '~/components/molecules', pathPrefix: false },
+      { path: '~/components/organisms', pathPrefix: false },
     ],
   },
 
