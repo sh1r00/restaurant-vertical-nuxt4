@@ -68,3 +68,6 @@ npm run generate   # → .output/public
 Netlify (`netlify.toml`): `NODE_VERSION = "24"`, build command `npm install --legacy-peer-deps --no-audit --no-fund && npm run generate`, publish dir `.output/public`, redirect `/*` → `/index.html` (200, SPA fallback). No `/` → `/en/` redirect.
 
 Live: https://restaurant-vertical.netlify.app
+
+## TODO / Roadmap
+- [ ] Point a custom domain (optional) — for client-facing work; a single wildcard domain can cover all sites.
